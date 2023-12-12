@@ -19,8 +19,8 @@ def main():
     TOURAMENT = generate_tournament(TEAMS, 1, True, random.randint(1, 2000000))
 
     # print(TOURAMENT)
-    for t in TOURAMENT:
-        print(t)
+    # for t in TOURAMENT:
+    #     print(t)
     t1 = time()
     ends, early = simulate(TOURAMENT, False)
     t2 = time()
@@ -32,21 +32,21 @@ def main():
 
     # no end early: 3617
     # print(ends.pop())
-    print(e:=early.pop())
-    wdm2 = e.get_win_diff_matrix(2)
-    wdm = e.get_win_diff_matrix()
-    print("wdm")
-    for line in wdm:
-        print(line)
+    # print(e:=early.pop())
+    # wdm2 = e.get_win_diff_matrix(2)
+    # wdm = e.get_win_diff_matrix()
+    # print("wdm")
+    # for line in wdm:
+    #     print(line)
 
-    print("wd2")
-    for line in wdm2:
-        print(line)
-    # print(round_infos)
-    for info in round_infos:
-        print(info)
+    # print("wd2")
+    # for line in wdm2:
+    #     print(line)
+    # # print(round_infos)
+    # for info in round_infos:
+    #     print(info)
 
-    print(e.end_simulation_early(output=True))
+    # print(e.end_simulation_early(output=True))
 
 if __name__ == "__main__":
     main()
